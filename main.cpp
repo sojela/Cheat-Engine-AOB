@@ -8,7 +8,16 @@ int main (int argc, char* argv[]) {
     std::cerr << "Usage: " << argv[0] << " PATH_TO_FILE" << "\n"
 	      << "Lines begining with a \"#\" are ignored\n";
     return 1;
+  } else {
+    std::string helpArgument = argv[1];
+    
+    if (helpArgument == "-h") {
+          std::cout << "Usage: " << argv[0] << " PATH_TO_FILE" << "\n"
+	      << "Lines begining with a \"#\" are ignored\n";
+        return 0;
+    }
   }
+
 
   std::ifstream file {argv[1]};
 
