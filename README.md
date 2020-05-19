@@ -8,15 +8,17 @@ Install a C++11 compiler and make, then run make.
 
 ## Usage
 
-Run without arguments to show help.
+Run without arguments or with "-h" to show help.
 
 ```powershell
-./aob.exe
+./aob.exe -h
+```
+```
 Usage: ./aob.exe PATH_TO_FILE
 Lines begining with a "#" are ignored
 ```
 
-If aob.txt is in the current folder and contains the following text.
+If aob.txt is in the current folder and contains the following text:
 
 ```
 a1 7f ?3 78 e0
@@ -24,9 +26,11 @@ a1 7f ?3 78 e0
 a1 66 23 78 f0
 ```
 
-Then using aob.txt outputs:
+Then passing aob.txt as an argument outputs:
 
 ```powershell
 ./aob.exe aob.txt
+```
+```
 a1 ?? ?3 78 ?0
 ```
