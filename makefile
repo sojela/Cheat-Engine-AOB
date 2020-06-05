@@ -7,4 +7,4 @@ aob: $(obj)
 
 .PHONY: clean
 clean:
-	rm -f $(obj) aob
+	del $(obj) aob.exe
